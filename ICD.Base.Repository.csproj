@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Version>6.1.11</Version>
+    <Company>MediTechSys</Company>
+    <Authors>Develop Team</Authors>
+    <Owners>MediTechSys</Owners>
+    <PackageIconUrl>http://172.16.100.52:90/base.png</PackageIconUrl>
+    <PackageProjectUrl>http://172.16.100.52/icd/base.git</PackageProjectUrl>
+  </PropertyGroup>
+
+  
+  <ItemGroup>
+    <PackageReference Include="ICD.Framework" Version="6.3.16" />
+    <PackageReference Include="ICD.Framework.Data" Version="6.3.16" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ICD.Base.Domain\ICD.Base.Domain.csproj" />
+    <ProjectReference Include="..\ICD.Base.RepositoryContract\ICD.Base.RepositoryContract.csproj" />
+    <ProjectReference Include="..\ICD.Base\ICD.Base.csproj" />
+  </ItemGroup>
+</Project>
